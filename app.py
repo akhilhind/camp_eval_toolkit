@@ -211,5 +211,5 @@ if __name__ == "__main__":
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
     app.config["CACHE_TYPE"] = "null"
-    #app.run(debug=True)
-    app.run(host='0.0.0.0', port=5678, debug=False)
+    app.run(debug=True)
+    # app.run(host='0.0.0.0', port=5678, debug=False)

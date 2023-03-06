@@ -49,9 +49,8 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/"
-          output_location: "templates"
+          output_location: "build"
           skip_build: true
-          run: "flask run"
           
 
   close_pull_request_job:

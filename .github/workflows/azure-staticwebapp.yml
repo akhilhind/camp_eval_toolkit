@@ -50,7 +50,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/"
           skip_build: true
-          output_location: "/"
+          output_location: "build"
 
   close_pull_request_job:
     permissions:

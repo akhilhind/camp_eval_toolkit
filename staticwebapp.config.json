@@ -2,7 +2,7 @@
     "routes": [
         {
             "route": "/",
-            "serve": "flask run"
+            "rewrite": "flask run"
         }
     ]
 }

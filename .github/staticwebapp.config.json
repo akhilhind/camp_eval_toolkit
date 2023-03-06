@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/app.py",
+      "statusCode": 200
+    }
+  ]
+}

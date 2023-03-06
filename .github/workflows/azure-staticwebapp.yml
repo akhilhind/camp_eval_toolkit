@@ -51,7 +51,7 @@ jobs:
           app_location: "/"
           output_location: "/"
           skip_build: true
-          
+          output_location: ""
 
   close_pull_request_job:
     permissions:

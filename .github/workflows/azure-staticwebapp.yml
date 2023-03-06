@@ -51,6 +51,7 @@ jobs:
           app_location: "/"
           output_location: "templates"
           skip_build: true
+          run: "flask run"
           
 
   close_pull_request_job:

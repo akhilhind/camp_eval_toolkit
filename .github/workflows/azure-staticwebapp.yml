@@ -39,8 +39,6 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      - name: finding content
-        run: ls -al
         
       - name: Build And Deploy
         id: builddeploy
@@ -56,6 +54,9 @@ jobs:
           skip_api_build: true
           output_location: "build"
 
+      - name: finding content
+        run: ls -al
+        
   close_pull_request_job:
     permissions:
       contents: none

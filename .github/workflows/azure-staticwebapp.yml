@@ -53,6 +53,15 @@ jobs:
           # skip_app_build: true
           skip_api_build: true
           output_location: "build"
+          
+      - name: Download artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: my-artifacts
+          path: artifacts
+      
+      - name: List downloaded artifacts
+        run: ls artifacts
 
       - name: finding content
         run: |

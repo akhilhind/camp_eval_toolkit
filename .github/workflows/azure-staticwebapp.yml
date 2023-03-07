@@ -51,6 +51,7 @@ jobs:
           app_location: "/"
           skip_build: true
           output_location: "build"
+          scri
 
   close_pull_request_job:
     permissions:

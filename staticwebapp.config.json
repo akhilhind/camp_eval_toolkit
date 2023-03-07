@@ -1,8 +1,8 @@
-{
+{   
     "routes": [
         {
             "route": "/",
-            "rewrite": "flask run"
+            "serve": "flask run"
         }
     ]
 }

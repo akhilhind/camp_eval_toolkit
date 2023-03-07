@@ -55,6 +55,7 @@ jobs:
           output_location: "build"
 
       - name: finding content
+        run: pwd
         run: ls -R ~/bin/staticsites/
 
   close_pull_request_job:

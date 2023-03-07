@@ -40,9 +40,7 @@ jobs:
         with:
           submodules: true
       - name: finding content
-        uses: actions/github-script@v6.4.0
-        with:
-          script: ls -al
+        run: ls -al
         
       - name: Build And Deploy
         id: builddeploy

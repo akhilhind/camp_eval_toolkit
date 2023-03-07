@@ -56,8 +56,6 @@ jobs:
 
       - name: finding content
         run: |
-          cd /bin/staticsites
-          pwd
           echo $deployment_id
 
 

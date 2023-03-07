@@ -50,13 +50,13 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match you app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/"
-          skip_app_build: true
+          # skip_app_build: true
           skip_api_build: true
           output_location: "build"
 
       - name: finding content
         run: ls -al
-        
+
   close_pull_request_job:
     permissions:
       contents: none

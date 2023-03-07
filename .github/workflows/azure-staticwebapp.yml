@@ -42,11 +42,12 @@ jobs:
 
       - name: install modules
         run: |
-          sudo apt-get install python3.9
+          sudo apt-get install python3.8
           python -m venv venv
           ls -al
           source venv/bin/activate
           pip install -r requirements.txt
+          cp staticwebapp.config.json model.py venv evaluation_code.ipynb evaluate.py app.py templates static files -r ./build
 
         
       - name: Build And Deploy

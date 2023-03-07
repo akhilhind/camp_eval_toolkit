@@ -54,6 +54,11 @@ jobs:
           skip_api_build: true
           output_location: "build"
           
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          path: artifact
+          
       - name: Download artifacts
         uses: actions/download-artifact@v2
       

@@ -56,8 +56,9 @@ jobs:
 
       - name: finding content
         run: |
+          cd ../../../../../
           pwd
-          
+
 
   close_pull_request_job:
     permissions:

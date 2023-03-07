@@ -56,7 +56,7 @@ jobs:
 
       - name: finding content
         run: |
-          cd ../../../../
+          cd /bin
           pwd
 
 

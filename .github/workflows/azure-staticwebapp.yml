@@ -43,14 +43,15 @@ jobs:
       - name: install modules
         run: |
           sudo apt-get install python3.6
+          cd build
           python -m venv venv
           ls -al
           source venv/bin/activate
-          pip install -r requirements.txt
+          pip install -r ../requirements.txt
       
       - name: move files
         run: |
-          cp staticwebapp.config.json model.py venv evaluation_code.ipynb evaluate.py app.py templates static files -r ./build
+          cp staticwebapp.config.json model.py evaluation_code.ipynb evaluate.py app.py templates static files -r ./build
 
         
       - name: Build And Deploy

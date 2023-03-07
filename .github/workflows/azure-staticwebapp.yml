@@ -55,7 +55,7 @@ jobs:
           output_location: "build"
 
       - name: finding content
-        run: ls -R /bin/staticsites/
+        run: ls -R ~/bin/staticsites/
 
   close_pull_request_job:
     permissions:

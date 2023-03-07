@@ -39,6 +39,14 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+
+      - name: install modules
+        run: |
+          apt-get install python3.9
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
+
         
       - name: Build And Deploy
         id: builddeploy

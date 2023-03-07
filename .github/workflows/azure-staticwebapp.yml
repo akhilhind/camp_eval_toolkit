@@ -42,7 +42,7 @@ jobs:
 
       - name: install modules
         run: |
-          sudo apt-get install python3.8
+          sudo apt-get install python3.6
           python -m venv venv
           ls -al
           source venv/bin/activate
